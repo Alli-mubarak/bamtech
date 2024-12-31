@@ -105,6 +105,9 @@ background: var(--menuhover);
     width: 90%;
     border: 1px dashed var(--fonts);
 }
+.site a {
+    display: block;
+}
 /* header styling ends, now Game*/
 
 .game-container{
