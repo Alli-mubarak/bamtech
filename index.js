@@ -105,7 +105,6 @@ if(displayer.children.length  < 11){
         game.style.display = "none";
         gameOver.style.display = "block";
         overS.play();
-        clearInterval(soundID);
         playingS.pause();
         playingS.currentTime = 0; //resets the audio to zero
          }
@@ -124,7 +123,6 @@ if(displayer.children.length  < 11){
                     control.style.display = "none";
                     endScore.innerHTML = score.innerHTML;
                     overS.play();
-                    clearInterval(soundID);
                     game.style.display = "none";
                     playingS.pause();
                     playingS.currentTime = 0; //resets the audio to zero
