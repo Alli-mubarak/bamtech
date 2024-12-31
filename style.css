@@ -107,6 +107,7 @@ background: var(--menuhover);
 }
 .site a {
     display: block;
+    color: var(--fonts);
 }
 /* header styling ends, now Game*/
 
