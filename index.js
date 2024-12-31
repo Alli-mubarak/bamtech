@@ -12,7 +12,6 @@ let siteHour = siteDate.getHours();
         all.classList.remove("dark");
     }
 const playingS = document.getElementById("playing-sound");
-playingS.pause();
 const correctS = document.getElementById("correct-sound");
 const overS = document.getElementById("over-sound");
 const setting = document.getElementById("settings");
@@ -94,6 +93,7 @@ function generateText() {
     mybtn.setAttribute("disabled","true");
     startGame.style.display = "none";
     game.style.display = "block";
+    
 if(displayer.children.length  < 11){
     let isRunning;
     let intervalID = setInterval(()=>{
