@@ -1,0 +1,28 @@
+main{
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+}
+.contact-us{
+    background: var(--border);
+    padding: 20px 0;
+    border-radius: 20px;
+    
+}
+.contact-links{
+    display: grid;
+    border-top: 1px solid var(--fonts);
+    text-align: left;
+    gap: 20px;
+    width: 80%;
+    margin: 30px auto;
+    padding: 30px 0;
+}
+.contact-links a{
+    text-decoration: none;
+    color: var(--fonts);
+}
+.contact-links a:hover{
+    text-decoration: underline;
+    color: blue;
+}

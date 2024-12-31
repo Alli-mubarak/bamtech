@@ -1,0 +1,277 @@
+.light{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    --back:lightblue;
+    --fonts:#333;
+    --border:lightskyblue;
+    --native:skyblue;
+    --menubtn:#444;
+    --menuhover:aliceblue;
+    --footer:rgb(149, 211, 250);
+}
+.dark{
+    --back:#222;
+    --fonts:#ddd;
+    --border:#444;
+    --native:#333;
+    --menubtn:#aaa;
+    --menuhover:#555;
+    --footer:#000;
+}
+.mode{
+    font-size: 10px;
+    cursor: pointer;
+    padding: 2px 5px;
+    border-radius: 5px;
+    margin-right: 10px;
+    background: var(--border);
+}
+body{
+    margin: 0; padding: 0;
+    background: var(--back);
+    color:var(--fonts) ;
+}
+/*header styling beginning*/
+header{
+    display: flex;
+    height: 50px;
+    border-bottom: 2px solid var(--border);
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.menu-btn{
+    padding: 0 15px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 17px;
+    
+}
+.web-name{
+    text-align: center;
+    width: 90%;
+}
+.web-name h1 a{
+    color: var(--back);
+    text-shadow: 0 0 2px var(--fonts);
+    cursor: pointer;
+    text-decoration: none;
+}
+.menu-big{
+    display: none;
+}
+.menu-small{
+    width: 0;
+    background: var(--native);
+    height: 50vh;
+    overflow: hidden;
+    transition: 0.3s;
+    position: absolute;
+    display: grid;
+    text-align: center;
+    gap: 5px;
+    align-items: center;
+    z-index: 1;
+}
+.menu-small a{
+    text-decoration: none;
+    color: var(--menubtn);
+    cursor: pointer;
+    height: 50px;
+    align-content: center;
+}
+.menu-small a:hover{
+background: var(--menuhover);
+}
+.intro{
+    text-align: center;
+}
+.intro p{
+    font-size: 14px;
+}
+.sites{
+    width: 90%;
+    margin: 10px auto;
+}
+.sites div{
+    width: 90%;
+    margin: 10px auto;
+    border: 2px solid var(--border);
+    text-align: center;
+    border-radius: 5px;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+.sites div img{
+    width: 90%;
+    border: 1px dashed var(--fonts);
+}
+/* header styling ends, now Game*/
+
+.game-container{
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 10px;
+    height: 500px;
+    border: solid 5px var(--border);
+    overflow: hidden;
+}
+.back-score{
+    display: flex;
+    padding: 2px 30px;
+    justify-content: space-between;
+    align-items: center;  
+}
+.back-score h4{
+    transform: rotate(180deg);
+    padding: 5px;
+    cursor: pointer;
+    font-size: 22px;
+    margin: 0;
+}
+.back-score h6{
+    padding: 2px 5px;
+    cursor: pointer;
+}
+.back-score h6:hover{
+    text-decoration: underline;
+}
+.start-game{
+    overflow: hidden;
+    height: 100%;
+    text-align: center;
+}
+.start-game .game-info{
+    font-size: 12px;
+    font-weight: 300;
+}
+.start-game button, #restarter{
+    width: 200px;
+    background: var(--native);
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 100px;
+    color: var(--fonts);
+    padding: 5px;
+}
+.start-game h2{
+    width: 50px;
+    margin-left: auto;
+    cursor: pointer;
+}
+#settings{
+    width: 200px;
+    margin-left: auto;
+    text-align: center;
+    display: none;
+}
+#settings input{
+    width: 80%;
+    accent-color: #333;
+}
+#settings p{
+    font-size: 12px;
+}
+.sounds{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20px;
+    margin: auto;
+    cursor: pointer;
+    color: var(--fonts);
+}
+.sounds p{
+    margin: 0;
+    font-size: 14px;
+    cursor: pointer;
+}
+.sound-switch{
+    width: 30px;
+    height: 15px;
+    background: var(--border);
+    border: 1px solid var(--fonts);
+    position: relative;
+}
+.sound-switch .inner{
+    position: absolute;
+    width: 15px;
+    left: 50%;
+    height: 15px;
+    background: #fff;
+}
+
+.game{
+    overflow: hidden;
+    height: 100%;
+    display: none;
+}
+.game-over{
+    overflow: hidden;
+    text-align: center;
+    height: 100%;
+    display: none;
+}
+.game-over h1{
+    margin-top: 100px;
+}
+.audio{
+    display: none;
+}
+.displayer{
+    height: 350px;
+    text-align: center;
+    padding: 10px;
+}
+.displayer h4{
+    padding: 2px 5px;
+    width:fit-content;
+    margin:0 auto 5px;
+    border: 1px solid blue;
+}
+.input{
+    margin-top: 10px;
+    text-align: center;
+}
+.input input{
+    width: 60%;
+    text-align: center;
+    font-size:20px;
+    font-family: monospace;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+footer{
+    background: var(--footer);
+    color: var(--fonts);
+    margin-bottom: 0;
+    padding: 10px;
+}
+footer ul li a{
+    font-size: 10px;
+    color: var(--fonts);
+    text-decoration: wavy;
+}
+footer .go-to-top p{
+    width: 20px;
+    margin-left: auto;
+    cursor: pointer;
+    font-size: 20px;
+}
+.info{
+    text-align: center;
+    margin-top: auto;
+}
+.info h4{
+    font-size: 12px;
+}
+footer p{
+    font-size: 10px;
+}
+@media only screen and (min-width:700px) {
+    .sites, .second-info{
+        display: grid;
+        grid-template:1fr 1fr/1fr 1fr ;
+    }
+}

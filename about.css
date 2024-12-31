@@ -1,0 +1,41 @@
+main{
+    width: 90%;
+    margin: 20px auto;
+}
+section{
+    display: grid;
+    gap: 20px;
+    text-align: center;
+}
+.first-info{
+    text-align: center;
+    font-size: 11px;
+    background-color: var(--border);
+    border-radius: 10px;
+    padding: 20px 0;
+    color: var(--fonts);
+}
+.second-info{
+    display: grid;
+    gap: 20px;
+    background-color: var(--border);
+    color: var(--fonts);
+    padding: 20px 0;
+    border-radius: 10px;
+}
+.second-info div{
+    background: var(--back);
+    width: 80%;
+    margin: auto;
+    padding: 10px 0;
+}
+.second-info div img{
+    max-width: 80%;
+}
+.second-info div h4{
+    margin-bottom: 5px;
+}
+.second-info div p{
+    font-size: 12px;
+    margin: 0;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAM-tech | Games</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="menu-btn">&#9776;</div>
+        <div class="web-name"><h1> <a href="index.html"> BAM-tech </a></h1></div>
+        
+        <div class="menu-big">
+            <a href="index.html">Home</a>
+            <a href="games.html">Games</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </header>
+    <div class="menu-small">
+        <a href="index.html">Home</a>
+        <a href="games.html">Games</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <main>
+        <section class="game-container">
+            <div class="start-game">
+                <h3>FAST_TYPE 2</h3>
+                <p class="game-info">This is the 2nd version of this game</p>
+                <p class="game-info">Type the words before the box get full</p>
+                <p class="game-info">You may need to adjust the settings before playing</p>
+                <button onclick="start(this)" id="starter">Start</button>
+                <h2 onclick="set()">⚙</h2>
+                <div id="settings">
+                    <input type="range" id="speed-setter">
+                    <p ><span class="speed">NaN</span> seconds</p>
+                    <div class="sounds" onclick="sound(this)">
+                        <p >sounds</p>
+                        <div class="sound-switch">
+                            <div class="inner"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="game">
+                <div class="back-score">
+                <h6 id="control">Pause</h6>
+                <h1 id="score">0</h1>
+                </div>
+                <div class="displayer"></div>
+                <div class="audio">
+                    <audio controls id="playing-sound" >
+                        <source src="playing.wav">
+                    </audio>
+                    <audio controls id="correct-sound">
+                        <source src="correct.wav">
+                    </audio>
+                    <audio controls id="over-sound">
+                        <source src="over.wav">
+                    </audio>
+                </div>
+        <div class="input">
+            <input type="text" placeholder="Type text here" id="input">
+        </div>
+            </div>
+            <div class="game-over">
+                <h1>Game is Over</h1>
+                <p>score :<span id="end-score">NaN</span></p>
+                <button onclick="restart(this)" id="restarter">Restart</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="#">explore</a></li>
+            <li><a href="#">design</a></li>
+            <li><a href="#">hiring</a></li>
+            <li><a href="#">trade</a></li>
+            <li><a href="#">donation</a></li>
+            <li><a href="#">documentation</a></li>
+            <li><a href="#">learn</a></li>
+            <li><a href="#">Privacy policy</a></li>
+        </ul>
+        <div class="go-to-top"><p onclick="goToTop()">🔝</p></div>
+                <div class="info">
+            <h4>This website is developed by <span class="dev-name">###</span></h4>
+            <p>@copyright 2024.</p>
+        </div>
+    </footer>
+<script src="index.js"></script>
+</body>
+</html>
